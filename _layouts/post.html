@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<span class="post-title-category">
+    {{ page.categories | category_links }} / 
+</span>
+
+<span class="post-title-name">
+    {{ page.title }}
+</span>
+
+<br>
+
+<span class="post-subtitle">
+    <time datetime="{{page.date|date:"%F"}}">{{ page.date|date:"%b %d, %Y" }}</time> • by {% if page.author %}{{ page.author }} {% else %} {{site.author}}{% endif %}
+</span>
+
+<br><br>
+
+<div>{{ content }}</div>

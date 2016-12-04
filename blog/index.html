@@ -1,0 +1,57 @@
+---
+layout: page
+title: Paolo D - Blog
+header: Blog
+---
+
+<span style="float:right"><a href="archive">Archive</a> • <a href="categories">Categories</a></span>
+
+<br><br>
+
+<!-- Show last 4 posts here -->
+{% for post in paginator.posts %}
+    <span class="post-title-category">
+        {{ post.categories | category_links }} / 
+    </span>
+
+    <a href="{{site.url}}{{post.url}}">
+        <span class="post-title-name">
+            {{ post.title }}
+        </span>
+    </a>
+
+    <br>
+
+    <span class="post-subtitle">
+        <time datetime="{{page.date|date:"%F"}}">{{ post.date|date:"%b %d, %Y" }}</time> • by {% if post.author %}{{ post.author }} {% else %} {{site.author}}{% endif %}
+    </span>
+
+    <br><br>
+
+    <div>{{ post.content | strip_html | truncatewords: 50 }} <a href="{{site.url}}{{post.url}}">(continue reading)</a> </div>
+
+    <br>
+
+{% endfor %}
+
+<!-- TODO: Fix styling and test this section (requires more than 4 number of posts to be entered) -->
+<div id="paginator">
+    {% if paginator.next_page %}
+            <a href="{{site.baseurl}}/page{{paginator.next_page}}">
+            &laquo; Older Posts</a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+                <span class="more">
+                <a href="{{site.baseurl}}/">
+                Newer Posts &raquo; </a>
+                </span>
+        {% else %}
+                <span class="more">
+                <a href="{{site.baseurl}}/page{{paginator.previous_page}}">
+                Newer Posts &raquo; </a>
+                </span>
+        {% endif %}
+    {% endif %}
+</div>
