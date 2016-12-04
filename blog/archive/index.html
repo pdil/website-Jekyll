@@ -7,7 +7,7 @@ header: Blog / Archive
 <table>
     {% for post in site.posts %}
         <tr>
-            <td>{{ post.date | date_to_html_string }}</td> 
+            <td>{{ post.date | date_to_string }}</td> 
             <td><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></td>
             <td>{{ post.categories | category_links }}</td>
         </tr>
