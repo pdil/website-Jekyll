@@ -29,6 +29,9 @@ url: http://dilorenzo.pl
 
 # Markdown engine, `kramdown` is the default processor in Jekyll 3.0.0 and the only one supported by Github Pages.
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
