@@ -1,0 +1,23 @@
+---
+layout: post
+title: Test Post 3
+category: iOS
+author: Paolo Di Lorenzo
+---
+
+Just testing some code highlighting: <br><br>
+
+{% highlight swift %}
+    
+    let number = 5.0
+    
+    func square(_ num: Double) -> Double {
+        return num * num
+    }
+    
+    let squaredNum = square(number)
+    print(squaredNum)
+        
+{% endhighlight %}
+
+That's just a simple function that squares a number.
