@@ -1,4 +1,5 @@
 #### Website Information #####
+
 name: Paolo Di Lorenzo
 description: This is the personal website and blog of Paolo Di Lorenzo.
 author: Paolo Di Lorenzo
@@ -6,6 +7,7 @@ author_email: paolo@dilorenzo.pl
 author_twitter: dilorenzopl
 
 #### URLs ####
+
 # The directory for category index pages. Change it to something else if
 # for example you want links like /categories/category1 instead of /category1
 category_dir: /
