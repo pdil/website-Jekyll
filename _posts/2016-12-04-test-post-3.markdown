@@ -9,15 +9,15 @@ Just testing some code highlighting: <br><br>
 
 {% highlight swift %}
     
-    let number = 5.0
-    
     func square(_ num: Double) -> Double {
         return num * num
     }
     
+    let number = 5.0
     let squaredNum = square(number)
-    print(squaredNum)
+    
+    print(squaredNum)   // prints 25.0
         
 {% endhighlight %}
 
-That's just a simple function that squares a number.
+That's a simple function that squares a number.
