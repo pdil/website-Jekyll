@@ -1,17 +1,11 @@
-# Name of your blog (this will show up at the top of your page and in the RSS feed)
+#### Website Information #####
 name: Paolo Di Lorenzo
-
-# Short description (goes below the title; it will also be used in the RSS feed)
 description: This is the personal website and blog of Paolo Di Lorenzo.
-
-# Your name, as you want it to appear underneath each post and in the footer
 author: Paolo Di Lorenzo
-
-# Your email if you want it to be linked on the contact page
 author_email: paolo@dilorenzo.pl
-
 author_twitter: dilorenzopl
 
+#### URLs ####
 # The directory for category index pages. Change it to something else if
 # for example you want links like /categories/category1 instead of /category1
 category_dir: /
@@ -25,7 +19,7 @@ baseurl:
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://dilorenzo.pl
 
-#### Under the Hood Stuff #####
+#### Jekyll Options #####
 
 # Markdown engine, `kramdown` is the default processor in Jekyll 3.0.0 and the only one supported by Github Pages.
 markdown: kramdown
@@ -40,6 +34,7 @@ permalink: pretty
 paginate: 4
 paginate_path: blog/page:num
 
+# Include the following rubygems
 gems: [jekyll-paginate]
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
