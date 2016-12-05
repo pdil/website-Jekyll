@@ -4,17 +4,20 @@ title: Paolo - Blog
 header: Blog
 ---
 
-<span style="float:right"><a href="archive">Archive</a> • <a href="categories">Categories</a></span>
+<a href="archive">Archive</a> • <a href="categories">Categories</a>
 
 <br><br>
 
 <!-- Show last 4 posts here -->
 {% for post in paginator.posts %}
     <span class="post-title-category">
-        {{ post.categories | category_links }} / 
+        <a href="{{site.url}}/{{post.category}}">
+            {{ post.categories }} 
+        </a>
+        /
     </span>
-
-    <a href="{{site.url}}{{post.url}}">
+    
+    <a href="{{post.url}}">
         <span class="post-title-name">
             {{ post.title }}
         </span>
@@ -23,12 +26,12 @@ header: Blog
     <br>
 
     <span class="post-subtitle">
-        <time datetime="{{page.date|date:"%F"}}">{{ post.date|date:"%b %d, %Y" }}</time> • by {% if post.author %}{{ post.author }} {% else %} {{site.author}}{% endif %}
+        {{ post.date | date_to_string }} • by {{ post.author }}
     </span>
 
     <br><br>
 
-    <div>{{ post.content | strip_html | truncatewords: 50 }} <a href="{{site.url}}{{post.url}}">(continue reading)</a> </div>
+    <div>{{ post.content | strip_html | truncatewords: 50 }} <a href="{{post.url}}">(continue reading)</a> </div>
 
     <br>
 

@@ -69,18 +69,25 @@ blockquote {
   font-style:italic;
 }
 
+figure {
+    width: 90%;
+    padding: 0px 0px;
+    margin-left: 20px;
+}
+
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    color: #333;
+    font-size:12px;
+    width: 100%;
 }
 
 pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 0px 0px;
 }
 
 table {
@@ -206,6 +213,10 @@ footer {
   position: relative;
   top: 18px;
   left: 10px;
+}
+
+.page-title {
+    font-size: 64px;
 }
 
 .post-title-category {

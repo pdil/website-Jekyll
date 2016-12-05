@@ -4,8 +4,12 @@ title: Paolo - Blog Categories
 header: Blog / Categories
 ---
 
-{% for post in site.posts %}
+<a href="..">&lt&lt Blog</a> • <a href="../archive">Archive</a>
 
-    {{ post.category }} <br>
+<br><br>
+
+{% for category in site.category_list %}
+
+    {{ category }} <br>
 
 {% endfor %}
