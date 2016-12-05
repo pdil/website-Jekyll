@@ -1,7 +1,11 @@
 ---
-layout: category_index
+layout: page
 title: Paolo - Blog Categories
 header: Blog / Categories
 ---
 
-test
+{% for post in site.posts %}
+
+    {{ post.category }} <br>
+
+{% endfor %}

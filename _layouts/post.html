@@ -3,7 +3,7 @@ layout: default
 ---
 
 <span class="post-title-category">
-    {{ page.categories | category_links }} / 
+    <a href="{{site.url}}/{{page.category}}">{{ page.category }}</a> / 
 </span>
 
 <span class="post-title-name">
@@ -13,7 +13,7 @@ layout: default
 <br>
 
 <span class="post-subtitle">
-    <time datetime="{{page.date|date:"%F"}}">{{ page.date|date:"%b %d, %Y" }}</time> • by {% if page.author %}{{ page.author }} {% else %} {{site.author}}{% endif %}
+    {{ page.date | date_to_string }} • by {{ page.author }}
 </span>
 
 <br><br>
