@@ -12,7 +12,7 @@ layout: null
             {% unless post.draft %}
                 <item>
                     <title>{{ post.title | xml_escape }}</title>
-                    <descritpion>{{ post.content | xml_escape }}</descritpion>
+                    <description>{{ post.content | xml_escape }}</description>
                     <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
                     <link>{{ post.url | prepend: site.url }}</link>
                     <guid isPermalink="true">{{ post.url | prepend: site.url }}</guid>

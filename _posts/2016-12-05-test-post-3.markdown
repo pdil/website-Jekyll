@@ -3,6 +3,7 @@ layout: post
 title: Test Post 3
 category: ios
 author: Paolo Di Lorenzo
+date: 2016-12-05 18:11 -0500
 ---
 
 Just testing some code highlighting: <br><br>

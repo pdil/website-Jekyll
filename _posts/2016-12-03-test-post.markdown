@@ -3,6 +3,7 @@ layout: post
 title: Test Post
 category: meta
 author: Paolo Di Lorenzo
+date: 2016-12-03 17:48 -0500
 ---
 
 Here I am testing blog posting with Jekyll in Github pages.

@@ -3,6 +3,7 @@ layout: post
 title: Test Post 2
 category: meta
 author: Paolo Di Lorenzo
+date: 2016-12-04 14:23 -0500
 ---
 
 This is a second test post. I needed another one to make sure the blog paginator is working.
