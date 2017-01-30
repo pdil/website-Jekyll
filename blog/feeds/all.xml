@@ -1,0 +1,22 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Paolo Di Lorenzo Blog</title>
+        <description>A collection of articles on data, programming, tech, and the world by Paolo Di Lorenzo.</description>
+        <link>{{ site.url }}</link>
+        {% for post in site.posts %}
+            {% unless post.draft %}
+                <item>
+                    <title>{{ post.title | xml_escape }}</title>
+                    <descritpion>{{ post.content | xml_escape }}</descritpion>
+                    <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                    <link>{{ post.url | prepend: site.url }}</link>
+                    <guid isPermalink="true">{{ post.url | prepend: site.url }}</guid>
+                </item>
+            {% endunless %}
+        {% endfor %}
+    </channel>
+</rss>
