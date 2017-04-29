@@ -1,4 +1,23 @@
 ---
-layout: rssfeedcategory
-category: micro
+layout: null
 ---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Paolo Di Lorenzo Micro.blog</title>
+        <description>A collection of Micro.blog posts on data, programming, tech, and the world by Paolo Di Lorenzo.</description>
+        <link>{{ site.url }}</link>
+        {% for post in site.posts %}
+            {% if post.category == "micro" %}
+            {% unless post.draft %}
+                <item>
+                    <description>{{ post.content | xml_escape }}</description>
+                    <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                    <link>{{ post.url | prepend: site.url }}</link>
+                    <guid isPermalink="true">{{ post.url | prepend: site.url }}</guid>
+                </item>
+            {% endunless %}
+            {% endif %}
+        {% endfor %}
+    </channel>
+</rss>
