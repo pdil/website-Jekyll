@@ -10,10 +10,14 @@ header: Blog / Archive
 
 <table>
     {% for post in site.posts %}
+      {% if post.category == "micro" %}
+        <!-- ignore Micro.blog posts -->
+      {% else if %}
         <tr>
             <td>{{ post.date | date_to_string }}</td> 
             <td><a href="{{post.url}}">{{ post.title }}</a></td>
             <td><a href="{{site.url}}/{{post.category}}">{{ post.category }}</a></td>
         </tr>
+      {% endif %}
     {% endfor %}
 </table>

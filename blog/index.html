@@ -10,6 +10,9 @@ header: Blog
 
 <!-- Show last 4 posts here -->
 {% for post in paginator.posts %}
+  {% if post.category == "micro" %}
+    <!-- ignore Micro.blog posts -->
+  {% else if %}
     <span class="post-title-category">
         <a href="{{site.url}}/{{post.category}}">
             {{ post.categories }} 
@@ -34,7 +37,7 @@ header: Blog
     <div>{{ post.content | strip_html | truncatewords: 50 }} <a href="{{post.url}}">(continue reading)</a> </div>
 
     <br>
-
+  {% endif %}
 {% endfor %}
 
 <!-- TODO: Fix styling and test this section (requires more than 4 number of posts to be entered) -->
