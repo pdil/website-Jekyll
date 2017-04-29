@@ -51,3 +51,6 @@ gems: [jekyll-paginate]
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.md, .gitignore, favicon.m]
+
+# Allow publishing of blog posts with future date and time
+future: true

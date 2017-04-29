@@ -1,0 +1,38 @@
+---
+layout: post
+title: usmap v0.2.0 released
+category: data
+author: Paolo Di Lorenzo
+date: 2017-04-29 15:20 -0500
+---
+
+I finally got around to updating usmap to version 0.2.0. This version adds the crucial feature of adding data to your maps so that you can create colorful choropleths. This is done by using the <code>map_with_data</code> function to retrieve a data frame. Alternatively, the <code>plot_usmap</code> function has been updated to allow a <code>data</code> parameter to be defined.
+<br>
+Here is an example of such a plot: <br>
+
+<center><img src="{{ site.url }}/images/state-pop-example-w-key.png" /></center>
+
+This map shows the population of each state as of 2015. The code to create this is as follows:
+
+{% highlight r %}
+  library(usmap)
+  library(ggplot2)
+
+  plot_usmap(data = statepop, values = "pop_2015") + 
+    scale_fill_continuous(low = "white", high = "red", name = "Population (2015)", label = scales::dollar) +
+    scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0)) +
+    theme(legend.position = "right")
+{% endhighlight %}
+
+As you can see we utilize the extensibility of <code>ggplot2</code> to create a nice map complete with a key.
+<br><br>
+The <a href="https://cran.r-project.org/web/packages/usmap/vignettes/mapping.html" target="_blank">mapping vignette</a> has been updated with more examples of the new functionality. Be sure to view the documentation for more help with <code>plot_usmap</code> and <code>map_with_data</code>.
+
+{% highlight r %}
+  ?usmap::plot_usmap
+  ?usmap::map_with_data
+{% endhighlight %}
+
+<hr>
+
+More features and fixes will be added soon as I move the package towards a stable 1.0 release. As always please check out the <a href="http://github.com/pdil/usmap" target="_blank">Github repo</a> for more information and to suggest/add new features.
