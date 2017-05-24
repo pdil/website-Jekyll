@@ -1,0 +1,19 @@
+---
+layout: null
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Paolo Di Lorenzo Blog",
+    "description": "A collection of articles on data, programming, tech, and the world by Paolo Di Lorenzo.",
+    "home_page_url": "http://dilorenzo.pl/blog",
+    "feed_url": "http://dilorenzo.pl/blog/feeds/all.json",
+    "items": [{% for post in site.posts %}{% unless post.draft %}{% unless post.category == "micro" %}
+          {
+            "id": "{{ post.url }}",
+            "title": {{ post.title | smartify | jsonify }}
+            "content_html": {{ post.content | smartify | jsonify }},
+            "date_published": "{{ post.date }}",
+            "url": "{{ post.url | prepend: site.url }}"
+          },
+    {% endunless %}{% endunless %}{% endfor %}]
+}
