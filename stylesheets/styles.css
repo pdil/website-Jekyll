@@ -163,8 +163,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 100px;
-  background: #555;
+  height: 125px;
 }
 
 #name-header h1 {
@@ -235,6 +234,10 @@ footer {
     padding:20px 0;
     margin:0 0 20px;
   }
+  
+  #name-header img {
+    height: 100px;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -249,11 +252,19 @@ footer {
   pre, code {
     word-wrap:normal;
   }
+  
+  #name-header img {
+    height: 75px;
+  }
 }
 
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+  }
+  
+  #name-header img {
+    height: 50px;
   }
 }
 
