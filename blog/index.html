@@ -13,7 +13,7 @@ header: Blog
   {% if post.category == "micro" %}
     <!-- ignore Micro.blog posts -->
   {% else if %}
-    <span class="post-title-category">
+    <span id="post-title-category">
         <a href="{{site.url}}/{{post.category}}">
             {{ post.categories }} 
         </a>
@@ -21,14 +21,14 @@ header: Blog
     </span>
     
     <a href="{{post.url}}">
-        <span class="post-title-name">
+        <span id="post-title-name">
             {{ post.title }}
         </span>
     </a>
 
     <br>
 
-    <span class="post-subtitle">
+    <span id="post-subtitle">
         {{ post.date | date_to_string }} • by {{ post.author }}
     </span>
 

@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<span class="post-title-category">
+<span id="post-title-category">
     <a href="{{site.url}}/{{page.category}}">{{ page.category }}</a> / 
 </span>
 
-<span class="post-title-name">
+<span id="post-title-name">
     {{ page.title }}
 </span>
 
 <br>
 
-<span class="post-subtitle">
+<span id="post-subtitle">
     {{ page.date | date_to_string }} • by {{ page.author }}
 </span>
 

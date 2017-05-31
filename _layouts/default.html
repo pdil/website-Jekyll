@@ -25,26 +25,36 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header">
-          <a href="{{site.url}}"><img src="{{site.url}}/images/profile-pic-circle.jpg" alt="" /></a>
+        <div id="name-header">
+          <a href="{{site.url}}"><img src="{{site.url}}/images/profile-pic-circle.jpg" alt="" /></a><br>
           <h1>Paolo Di Lorenzo</h1>
+          
+          <div id="social-icons">
+            <a href="https://github.com/pdil" target="_blank"><img src="{{site.url}}/images/social/github-32px.png"></a>
+            <a href="https://twitter.com/dilorenzopl" target="_blank"><img src="{{site.url}}/images/social/twitter-32px.png"></a>
+            <a href="https://instagram.com/_dilorenzopl" target="_blank"><img src="{{site.url}}/images/social/instagram-32px.png"></a>  
+          </div>
+          
         </div>
-        <p></p>
-
-
-        <p class="view"><a href="https://github.com/pdil" target="_blank">View My GitHub Profile</a>
-        <p><a href="{{site.url}}">Home</a>
-        <p><a href="{{site.url}}/about">About</a>
-        <p><a href="{{site.url}}/blog">Blog</a></p>
-        <!-- <p><a href="{{site.url}}/photos">Photo Gallery</a> -->
-        <p><hr></p>
-        <p><a href="{{site.url}}/passport">Passport (iOS)</a></p>
-        <p><a href="{{site.url}}/usmap">usmap (R)</a></p>
-
+        
+        <ul>
+          <li><a href="{{site.url}}">Home</a></li>
+          <li><a href="{{site.url}}/about">About</a></li>
+          <li><a href="{{site.url}}/blog">Blog</a></li>
+        </ul>
+          
+        <hr>
+          
+        <ul>
+          <li><a href="{{site.url}}/passport">Passport (iOS)</a></li>
+          <li><a href="{{site.url}}/usmap">usmap (R)</a></li>
+        </ul>
       </header>
+      
       <section>
         {{ content }}
       </section>
+      
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
