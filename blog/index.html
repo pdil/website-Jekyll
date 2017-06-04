@@ -14,7 +14,7 @@ header: Blog
     <!-- ignore Micro.blog posts -->
   {% else if %}
     <span id="post-title-category">
-        <a href="{{site.url}}/{{post.category}}">
+        <a href="{{site.url}}{{site.category_dir}}{{post.category}}">
             {{ post.categories }} 
         </a>
         /
