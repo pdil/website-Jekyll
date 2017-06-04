@@ -4,11 +4,21 @@ title: Paolo - Blog Archive
 header: Blog / Archive
 ---
 
-<a href="..">&lt&lt Blog</a> • <a href="../categories">Categories</a> • <a href="../feeds">Feeds</a>
+<a href=".."><span id="back-button">&laquo;</span> Blog</a> • <a href="../categories">Categories</a> • <a href="../feeds">Feeds</a>
 
 <br><br>
 
 <table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Category</th>
+    </tr>  
+  </thead>
+    
+  <tbody>
+  
     {% for post in site.posts %}
       {% if post.category == "micro" %}
         <!-- ignore Micro.blog posts -->
@@ -20,4 +30,6 @@ header: Blog / Archive
         </tr>
       {% endif %}
     {% endfor %}
+      
+  </tbody>
 </table>

@@ -4,12 +4,33 @@ title: Paolo - Blog Categories
 header: Blog / Categories
 ---
 
-<a href="..">&lt&lt Blog</a> • <a href="../archive">Archive</a> • <a href="../feeds">Feeds</a>
+<a href=".."><span id="back-button">&laquo;</span> Blog</a> • <a href="../archive">Archive</a> • <a href="../feeds">Feeds</a>
 
 <br><br>
 
-{% for cat in site.categories_list %}
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Count</th>
+      <th>Last Post</th>
+    </tr>  
+  </thead>
+    
+  <tbody>
+  
+    {% assign sorted_categories = site.categories | sort %}
+    
+    {% for tag in sorted_categories %}
 
-    {{ cat }} <br>
+      {% assign last_post = tag[1] | sort: 'date' | last %}
 
-{% endfor %}
+        <tr>
+          <td><a href="{{ site.category_dir }}{{ tag[0] }}">{{ tag[0] }}</a></td>
+          <td>{{ tag[1].size }} posts</td>
+          <td>{{ last_post.date | date_to_string }}</td>
+        </tr>
+    {% endfor %}
+      
+  </tbody>
+</table>

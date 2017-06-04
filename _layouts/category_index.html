@@ -2,21 +2,32 @@
 layout: default
 ---
  
-<span class="page-title">
+<span id="page-title">
     Category: {{ page.category }}
 </span>
 
 <br>
 
-<a href="../blog/archive">Archive</a> • <a href="../blog/categories">Categories</a>
+<a href=".."><span id="back-button">&laquo;</span> Blog</a> • <a href="../archive">Archive</a> • <a href="..">Categories</a>
 
 <br><br>
 
 <table>
-    {% for post in site.categories_list[page.category] %}
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+    </tr>  
+  </thead>
+    
+  <tbody>
+  
+    {% for post in site.categories[page.category] %}
         <tr>
             <td>{{ post.date | date_to_string }}</td> 
             <td><a href="{{post.url}}">{{ post.title }}</a></td>
         </tr>
     {% endfor %}
+      
+  </tbody>
 </table>

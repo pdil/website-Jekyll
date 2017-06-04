@@ -167,6 +167,11 @@ footer {
   background: #fff;
 }
 
+#back-button {
+  font-size: 125%;
+  vertical-align: center;
+}
+
 #name-header h1 {
   text-align: center;
 }
