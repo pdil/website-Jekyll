@@ -13,7 +13,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   git config user.email "dilorenzopl@gmail.com"
 
   git add -A .
-  git commit -m "Deploy pages at ${rev}"
+  git commit -m "Deploy pages at website-generator/${rev}"
 
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
