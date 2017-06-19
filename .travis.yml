@@ -1,8 +1,12 @@
 language: ruby
 rvm:
   2.3.3
-  
-install: gem install jekyll html-proofer jekyll-paginate
+
+before_install:
+  - chmod +x scripts/build.sh
+
+
+install: gem install jekyll html-proofer jekyll-paginate  
 script: scripts/build.sh
 
 branches:
