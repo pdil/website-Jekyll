@@ -43,7 +43,7 @@ paginate_path: blog/page:num
 plugins: [jekyll-paginate]
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.md, .gitignore, favicon.m, vendor]
+exclude: [README.md, .gitignore, favicon.m, scripts, vendor]
 
 # Allow publishing of blog posts with future date and time
 future: true
