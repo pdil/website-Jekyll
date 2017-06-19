@@ -1,4 +1,4 @@
 #!/bin/bash
 
 jekyll build
-htmlproofer ./_site
+htmlproofer ./_site --alt-ignore '/.*/'
