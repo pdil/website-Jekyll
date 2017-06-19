@@ -1,23 +1,21 @@
 language: ruby
-rvm:
-  2.3.3
+rvm: 2.3.3
 
 before_install:
-  - chmod +x scripts/build.sh
-  - chmod +x scripts/deploy.sh
+- chmod +x scripts/build.sh
+- chmod +x scripts/deploy.sh
 
-
-install: gem install jekyll html-proofer jekyll-paginate  
+install: gem install jekyll html-proofer jekyll-paginate
 script: scripts/build.sh
 
 branches:
   only:
-    - master  # test the master branch
+  - master
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-    
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
 sudo: false
 
 deploy:
@@ -30,6 +28,6 @@ deploy:
 notifications:
   pushover:
     api_key:
-      secure: tcWoqC0bj6PgS/J/xHdy5TCOjht/qPl5W2+wbiqedw+mpLL7PulmWbnkr23RdQ0gua6wiXJ29X8pdA+eRF8Ml8pYt1//jY9E86S9BZI2VcpXdukTNBbYQ0CrboGz5hLoa2Ia8yyDYlv4fX/gKhYJtD/bWnJPtyv+fXVIn+Pmaz/hA3OCJgOb/jBQczpdk4G5qSkCQy3B1sDdKQ036+cR/MUfNEY4EioJaGuSVSgn7JuHZDBuZzDtgrzPBALDOZtIjhDygoQFt/iFWPC3RNqkNeasYZU6nDW38k71Hj8n5kRzQz8hT94VF+VpOETGPFc13XWYpso7VLkD7KJqo6V1q8yI7455RLXkos92WMObLvSkj7ERspy0WlqyRyAzbi2kTneoRZjnnMI/js7w6lAifI2/PHyBXHlIPlaBTPhGeBL4urF7LjjguH85e7Wqc2FEtUOrI1HAE5r3gUXk4a0lV1bcKkYBeNlhG9hqBklyn4yvqJ9bVg7nWPZfga8kLx9XTxKGpEfh7DnkF+mftsF1Z7Th8YIXJMXQXEuumkjp66p/hS9lfx+k/GytHWimpCDPbswyBYJwjgcqpuqH6uBozq7s2zrEGNQZjQF7qkLDCVbWXeuHO1NYRSpq3ONkzmh7At80UlDxOmbu9BL/XQFEtFzF/P1o8vSbm6Fk/Y8z864=
+      secure: MLnUfEZxkLvymvt8ZaNAyEmxJ6/XLMLGKH5wTpeN2Gvts13AqF9Qy4rRs4Svv0ku283Y8iE0TN6tzpGVL0m9zt22zqTG1sgZhtNrzX33a3uvozX9+wqlHWlKQnopl5qmmCFY9QrPAmBWg5SWsESocdWH96b/aJ/Kg8TqkSgi4CLTF/SrVoved2OFP0ubNq7Z6v9NMLrp6XdDPAVE+Ezx8YSnAiJDQsdaN8aKRYbkM42Y35/3y5yzwyzra8nPK/6yMV1WDw02E6hKmyBePy+o9vr2RLvHQYUSY2hYDbGKK88yZHUn4S3yhDTzKxt6hmLCBCEMr3Q0ikh3O0WhZhAWq8eK3ORh+YXc6qcFWmWXsRU+dxMZJ7dhHIFKnOqiexRJe6yvCdMf7BlHx1SiSx6tjqTFwlW/UNZEeZSy0oODQQoHczRjvt4KsWTvZXWcqnpdG44om9E+A3+RhGCGI5fa3Z50Eg+QK33UhKAHNv8P2+dv2x1VvyHGPyuIVxRZIbvHK5NeS06TJosCPypmh61zxg3acY4a9bYEMGyXY7pj05GpDKj6Ify7R1JKCFXPez53Xoh/XNOKMderxzYSRfcskBgiN/l2QD8wFH7gdAoEGeKRKgk96PhK8/WpK1zORYFAx8AReF4/rwQH9T46NE8jqxWc4P9h0CUrdvA/pwf+37c=
     users:
-      secure: ORjIC6wFraBUEBdh3RVTWG33u9T4Ebzi8h1Tn+lp6IEteIKHinybxSGnaYHRQIJEMkqFcUl7YcAXcoY2LmADKrDoNIs0BSjoAjjczc/ROYiJFXdtlDpSB4l7SYBD4wc/kpcsdqL/iGKXHXwS6iyAXqmM0zPjEhdaQEGhZdgo5T/mHajVIm8TOymrqhW1CQebRlbyp442+0Dt5pJ5tTdh5Lrc2ef8XyGwpYyMWIbqPQOhx/FRlegV07RETfJ5lNaBLxB/3tdfNt8vXqsE99xThFc01XInBqTIG+j4v2u5h1A9JLuC8bRfSigj1Kf2mD00Gtrk6vu+pKPPV+WmnqzU/Z5vOzWVQDS1ofE06MI1HyGknfuQgxzS3QjUT+LPCrHRB8eqTAo+NFrbRbCB10CFtYJL+l+huFyiO6OGZYgZnrtw2zyJWvwWLsAndWy+vJUAbqORVHrrMVJbZxvUHVdNeeFd7trMLkVBcqcL6B9bgFPV8DqKZYoQZU6pD8KkK9hYIPi8jFRxTcidjJOnTblsv67BCUldRJA6bE4T/WSuZWquu+gd/4DQ/jjQWBPh8Jrt45fT7bU5qeNr+8WEQn/zQiJHpkq7MMNjxmDWZzfo9Wl4Snj65KVRSuPcTiXtNV4m7K3JpY/l+lZyff8iNlJiIGBiz4bCe5biKLl5dEmHz2Y=
+      secure: gxnKJYXiRzZrGbH10qrKxOsDogDAfC6Jb75Miht6/NFebZrszxu6a5eGlPNk4OszlLeHOz6BxZqc1iPN0XJNlH2dohdfh4MQmS9iEXOOFyiZ5Q5hRGBQaffW70VGi7Oke0uf5DW6zdS52GFPcFB6qPILK7DnSVmOb5GHXXQ1EhfWstpms1vvGO/GWjw5Oo+J6FO/toKtTBdRqDjugbdn+aHhydLx7g3fLGQt75osbmwfBATl9P/3j2rdiYfggOXhQDFkCUK2Dq/UYg/+dVmnSXID082BMvy2eNtkAiWaAe7PwWITXUQZF0WWcAMIbFTnuipEEeIeTUHn8sxvmoBK6nIvlmqZhQWCvjOcTf7sPoTaUZ+kFTYm1kXopSuwQNUNO6A1W/IMjIyEcvZkIV1hMJvUfGo19dbqmsfdCAYw8CZ4ANc2X/B7xQXqcmAEXurwz4GOsC9NHJllxZf+OstLOElFdLCP4yQ/dDWzV60FXvBP+ZoXtC5X0SV13d4JAtiNUnyU3OKtmA+YP2iDaWbxezScGigeL+FRbntEdVozfnTBLaLZYFQEXKfpHwC5gOSQDbWlto5dHaBs6qbSNiBKxLpyTsvQl40ya7Nqde6syA0OOhZMXVZBib4+LSKYCTvG+cTC9+E7szgzl6s7ym824tBfAdyiaVq34E/FBs1LIFc=
