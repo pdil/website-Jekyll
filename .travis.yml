@@ -4,6 +4,7 @@ rvm:
 
 before_install:
   - chmod +x scripts/build.sh
+  - chmod +x scripts/deploy.sh
 
 
 install: gem install jekyll html-proofer jekyll-paginate  
