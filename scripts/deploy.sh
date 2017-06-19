@@ -4,7 +4,7 @@ set -o errexit -o nounset
 
 if [[ $TRAVIS_BRANCH == 'master' ]] ; then
 
-  rev = $(git rev-parse --short HEAD)
+  rev=$(git rev-parse --short HEAD)
   
   cd _site
   git init
