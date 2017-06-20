@@ -1,0 +1,33 @@
+language: ruby
+rvm: 2.3.3
+
+before_install:
+- chmod +x scripts/build.sh
+- chmod +x scripts/deploy.sh
+
+install: gem install jekyll html-proofer jekyll-paginate
+script: scripts/build.sh
+
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+sudo: false
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: master
+
+notifications:
+  pushover:
+    api_key:
+      secure: MLnUfEZxkLvymvt8ZaNAyEmxJ6/XLMLGKH5wTpeN2Gvts13AqF9Qy4rRs4Svv0ku283Y8iE0TN6tzpGVL0m9zt22zqTG1sgZhtNrzX33a3uvozX9+wqlHWlKQnopl5qmmCFY9QrPAmBWg5SWsESocdWH96b/aJ/Kg8TqkSgi4CLTF/SrVoved2OFP0ubNq7Z6v9NMLrp6XdDPAVE+Ezx8YSnAiJDQsdaN8aKRYbkM42Y35/3y5yzwyzra8nPK/6yMV1WDw02E6hKmyBePy+o9vr2RLvHQYUSY2hYDbGKK88yZHUn4S3yhDTzKxt6hmLCBCEMr3Q0ikh3O0WhZhAWq8eK3ORh+YXc6qcFWmWXsRU+dxMZJ7dhHIFKnOqiexRJe6yvCdMf7BlHx1SiSx6tjqTFwlW/UNZEeZSy0oODQQoHczRjvt4KsWTvZXWcqnpdG44om9E+A3+RhGCGI5fa3Z50Eg+QK33UhKAHNv8P2+dv2x1VvyHGPyuIVxRZIbvHK5NeS06TJosCPypmh61zxg3acY4a9bYEMGyXY7pj05GpDKj6Ify7R1JKCFXPez53Xoh/XNOKMderxzYSRfcskBgiN/l2QD8wFH7gdAoEGeKRKgk96PhK8/WpK1zORYFAx8AReF4/rwQH9T46NE8jqxWc4P9h0CUrdvA/pwf+37c=
+    users:
+      secure: gxnKJYXiRzZrGbH10qrKxOsDogDAfC6Jb75Miht6/NFebZrszxu6a5eGlPNk4OszlLeHOz6BxZqc1iPN0XJNlH2dohdfh4MQmS9iEXOOFyiZ5Q5hRGBQaffW70VGi7Oke0uf5DW6zdS52GFPcFB6qPILK7DnSVmOb5GHXXQ1EhfWstpms1vvGO/GWjw5Oo+J6FO/toKtTBdRqDjugbdn+aHhydLx7g3fLGQt75osbmwfBATl9P/3j2rdiYfggOXhQDFkCUK2Dq/UYg/+dVmnSXID082BMvy2eNtkAiWaAe7PwWITXUQZF0WWcAMIbFTnuipEEeIeTUHn8sxvmoBK6nIvlmqZhQWCvjOcTf7sPoTaUZ+kFTYm1kXopSuwQNUNO6A1W/IMjIyEcvZkIV1hMJvUfGo19dbqmsfdCAYw8CZ4ANc2X/B7xQXqcmAEXurwz4GOsC9NHJllxZf+OstLOElFdLCP4yQ/dDWzV60FXvBP+ZoXtC5X0SV13d4JAtiNUnyU3OKtmA+YP2iDaWbxezScGigeL+FRbntEdVozfnTBLaLZYFQEXKfpHwC5gOSQDbWlto5dHaBs6qbSNiBKxLpyTsvQl40ya7Nqde6syA0OOhZMXVZBib4+LSKYCTvG+cTC9+E7szgzl6s7ym824tBfAdyiaVq34E/FBs1LIFc=

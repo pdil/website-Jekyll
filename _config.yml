@@ -40,10 +40,10 @@ paginate: 4
 paginate_path: blog/page:num
 
 # Include the following rubygems
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.md, .gitignore, favicon.m]
+exclude: [README.md, .gitignore, .travis.yml, favicon.m, scripts, vendor]
 
 # Allow publishing of blog posts with future date and time
 future: true
