@@ -28,7 +28,7 @@ header: Blog / Categories
         <tr>
           <td><a href="{{ site.category_dir }}{{ tag[0] }}">{{ tag[0] }}</a></td>
           <td>{{ tag[1].size }} posts</td>
-          <td>{{ last_post.date | date_to_string }}</td>
+          <td><a href="{{ site.url }}/{{ last_post.url }}">{{ last_post.date | date_to_string }}</a></td>
         </tr>
     {% endfor %}
       
