@@ -1,17 +1,20 @@
-<script type='text/javascript'>
-  var _merchantSettings=_merchantSettings || [];
+{% if site.itunes_affiliate_id %}
 
-  _merchantSettings.push(['AT', '1001lxud']);
+    <script type='text/javascript'>
+        var _merchantSettings=_merchantSettings || [];
+        _merchantSettings.push(['AT', '{{ site.itunes_affiliate_id }}']);
 
-  (function() {
+        (function() {
 
-    var autolink=document.createElement('script');
-    autolink.type='text/javascript';
-    autolink.async=true; 
-    autolink.src=('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
+            var autolink=document.createElement('script');
+            autolink.type='text/javascript';
+            autolink.async=true; 
+            autolink.src=('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
 
-    var s=document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(autolink, s);
+            var s=document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(autolink, s);
 
-  })();
-</script>
+         })();
+    </script>
+
+{% endif %}
