@@ -8,9 +8,10 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   
   cd _site
 
-  #git config user.name "Paolo Di Lorenzo (Travis CI)"
-  #git config user.email "dilorenzopl@gmail.com"
+  git config user.name "Paolo Di Lorenzo (Travis CI)"
+  git config user.email "dilorenzopl@gmail.com"
 
+  touch .
   git add -A .
   git commit -m "Deploy pages at website-generator/${rev}"
 
