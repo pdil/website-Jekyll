@@ -6,7 +6,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
 
   rev=$(git rev-parse --short HEAD)
   
-  git clone --quiet "https://${git_token}@${git_target}"
+  #git clone --quiet "https://${git_token}@${git_target}"
   cd _site
   
   #cd _site
