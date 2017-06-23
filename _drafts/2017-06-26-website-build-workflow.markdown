@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Automated blog publishing with Jekyll and Travis CI
+title: Automated blog publishing with Jekyll and Travis CI on iOS
 category: meta
 author: Paolo Di Lorenzo
-date: 2017-06-20 20:00 -0500
+date: 2017-06-26 20:00 -0500
 ---
 
 My website/blog that you are currently reading is built using the [Jekyll framework](https://jekyllrb.com) and hosted on [Github Pages](https://pages.github.com). Jekyll allows one to define webpage layouts, insert plugins, and automate much of the blog generating process. For example, on my website I have used a [plugin]() that automatically generates all of the [category]({{site.url}}/blog/categories) from the written posts. Similarly blog posts have a predefined layout that is used which allows me to focus on writing the content of each post and not worry about making sure each detail of the site (sidebar, CSS, etc.) is consistent throughout. Jekyll has the added benefit of generating a static HTML webpage from your layouts, stylesheets, plugins, and pages which tend to render much faster since there is no dynamic content.
@@ -22,7 +22,8 @@ Here are the steps that Travis CI executes for me and I'll explain each in more 
    * The [`.travis.yml`](https://github.com/pdil/website-generator/blob/master/.travis.yml) file lists the settings that Travis is to use, as well as any commands that should be executed before/after the build.
 3. On the Travis CI server we install some Ruby gems that are needed for the build (`jekyll`, `html-proofer`, and `jekyll-paginate`)
 4. Run [`scripts/build.sh`](https://github.com/pdil/website-generator/blob/master/scripts/build.sh)
-   * `build.sh` runs `jekyll build` and checks for any HTML errors with `html-proofer`
+   * `build.sh` clones the `pdil/_site` repo so that changes to it will be tracked and pushed back to Github
+   * Next it runs `jekyll build` and checks for any HTML errors with `html-proofer`
 5. Deploy the generated website by running [`scripts/deploy.sh`](https://github.com/pdil/website-generator/blob/master/scripts/deploy.sh)
    * `deploy.sh` switches to the `_site` folder, initializes a git repository, and commits all of the files to [pdil/_site](https://github.com/pdil/_site)
 6. Github does all the work by hosting the contents of `pdil/_site` on Github pages. The CNAME file points the domain name (`dilorenzo.pl`) to the hosted content.
@@ -32,7 +33,7 @@ That is the basic process by which my website is built, from sending the commit 
 
 Now I'll briefly talk about the tools I use on iOS to post to this website.
 
-## Tools for on-the-go publishing
+## Publishing from iOS
 
 My workflow for editing and posting to this site on iOS revolve around two main apps.
 
@@ -59,4 +60,4 @@ The iPad is great for this because of its SplitView multitasking feature. I'm ex
 
 ## Conclusion
 
-The combination of web services and iOS apps really come together to provide a nice, streamlined workflow for publishing blogs using Jekyll. This process could be extended to push the generated website files to any server that one is using to host their site (such as Amazon S3). If you have any other ideas for improving this workflow or what techniques you use for your own content, tell me on [Twitter](https://twitter.com/dilorenzopl)!
+The combination of web services and iOS apps really come together to provide a streamlined workflow for publishing blogs using Jekyll. In fact, the blog post you're reading right now was written from my iPad Air 2! This process could be extended to push the generated website files to any server that one is using to host their site (such as Amazon S3). If you have any other ideas for improving this workflow or what techniques you use for your own content, tell me on [Twitter](https://twitter.com/dilorenzopl). I'm always looking for ways to improve and am curious about other people's methods.
