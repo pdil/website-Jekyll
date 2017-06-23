@@ -6,11 +6,14 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
 
   rev=$(git rev-parse --short HEAD)
   
+  git clone --quiet "https://${git_token}@${git_target}"
   cd _site
-  git init
+  
+  #cd _site
+  #git init
 
-  git config user.name "Paolo Di Lorenzo (Travis CI)"
-  git config user.email "dilorenzopl@gmail.com"
+  #git config user.name "Paolo Di Lorenzo (Travis CI)"
+  #git config user.email "dilorenzopl@gmail.com"
 
   git add -A .
   git commit -m "Deploy pages at website-generator/${rev}"
