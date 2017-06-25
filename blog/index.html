@@ -10,9 +10,6 @@ header: Blog
 
 <!-- Show last 4 posts here -->
 {% for post in paginator.posts %}
-  {% if post.category == "micro" %}
-    <!-- ignore Micro.blog posts -->
-  {% else if %}
     <span id="post-title-category">
         <a href="{{site.url}}{{site.category_dir}}{{post.category}}">
             {{ post.categories }} 
@@ -37,25 +34,24 @@ header: Blog
     <div>{{ post.content | strip_html | truncatewords: 50 }} <a href="{{post.url}}">(continue reading)</a> </div>
 
     <br>
-  {% endif %}
 {% endfor %}
 
 <!-- TODO: Fix styling and test this section (requires more than 4 number of posts to be entered) -->
 <div id="paginator">
     {% if paginator.next_page %}
-            <a href="{{site.baseurl}}/page{{paginator.next_page}}">
+            <a href="{{site.baseurl}}/blog/page{{paginator.next_page}}">
             &laquo; Older Posts</a>
     {% endif %}
 
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
                 <span class="more">
-                <a href="{{site.baseurl}}/">
+                <a href="{{site.baseurl}}/blog">
                 Newer Posts &raquo; </a>
                 </span>
         {% else %}
                 <span class="more">
-                <a href="{{site.baseurl}}/page{{paginator.previous_page}}">
+                <a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}">
                 Newer Posts &raquo; </a>
                 </span>
         {% endif %}

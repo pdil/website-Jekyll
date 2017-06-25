@@ -4,6 +4,7 @@ title: Micro.blog Post #2
 category: micro
 author: Paolo Di Lorenzo
 date: 2017-06-18 22:17 -0500
+hidden: true
 ---
 
 Just setup a pipeline to easily post to my blog using Jekyll, Travis CI, and the Working Copy iOS app. I'll be using it for future micro.blog posts 😉

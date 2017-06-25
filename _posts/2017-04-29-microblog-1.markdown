@@ -4,6 +4,7 @@ title: Micro.blog Post #1
 category: micro
 author: Paolo Di Lorenzo
 date: 2017-04-29 00:40 -0500
+hidden: true
 ---
 
 First Micro.blog post! Excited to see what the future holds for this platform.

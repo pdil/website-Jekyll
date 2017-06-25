@@ -159,6 +159,10 @@ footer {
   bottom:50px;
 }
 
+more {
+  float: right
+}
+
 #name-header img {
   margin-left: auto;
   margin-right: auto;
