@@ -3,7 +3,7 @@ layout: post
 title: Automated publishing with Jekyll and Travis CI on iOS
 category: meta
 author: Paolo Di Lorenzo
-date: 2017-06-26 15:00 -0500
+date: 2017-06-26 14:15 -0500
 ---
 
 My website/blog that you are currently reading is built using the [Jekyll framework](https://jekyllrb.com) and hosted on [Github Pages](https://pages.github.com). Jekyll allows one to define webpage layouts, insert plugins, and automate much of the blog generating process. For example, on my website I have used a [plugin](https://github.com/recurser/jekyll-plugins/blob/master/generate_categories.rb) that automatically generates all of the [categories]({{site.url}}/blog/categories) from the written posts. Similarly blog posts have a predefined layout that is used which allows me to focus on writing the content of each post and not worry about making sure each detail of the site (sidebar, CSS, etc.) is consistent throughout. Jekyll has the added benefit of generating a static HTML webpage from your layouts, stylesheets, plugins, and pages which tend to render much faster since there is no dynamic content.
