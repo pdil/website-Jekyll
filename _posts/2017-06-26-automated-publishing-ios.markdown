@@ -3,7 +3,7 @@ layout: post
 title: Automated publishing with Jekyll and Travis CI on iOS
 category: meta
 author: Paolo Di Lorenzo
-date: 2017-06-26 14:15 -0500
+date: 2017-06-26 15:30 -0500
 ---
 
 My website/blog that you are currently reading is built using the [Jekyll framework](https://jekyllrb.com) and hosted on [Github Pages](https://pages.github.com). Jekyll allows one to define webpage layouts, insert plugins, and automate much of the blog generating process. For example, on my website I have used a [plugin](https://github.com/recurser/jekyll-plugins/blob/master/generate_categories.rb) that automatically generates all of the [categories]({{site.url}}/blog/categories) from the written posts. Similarly blog posts have a predefined layout that is used which allows me to focus on writing the content of each post and not worry about making sure each detail of the site (sidebar, CSS, etc.) is consistent throughout. Jekyll has the added benefit of generating a static HTML webpage from your layouts, stylesheets, plugins, and pages which tend to render much faster since there is no dynamic content.
@@ -45,10 +45,10 @@ Now I'll briefly talk about the tools I use on iOS to post to this website.
 My workflow for editing and posting to this site on iOS revolve around two main apps.
 
 ### Working Copy
-[Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8){:target="_blank"} is a powerful git client that allows you to create and clone git repositories. I have my [`website-generator`](https://github.com/pdil/website-generator) repository in Working Copy which lets me edit any file in that repo and commit the changes. As soon as the changes are committed, the Travis CI workflow detailed above is kicked off.
+[Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8&at=1001lxud){:target="_blank"} is a powerful git client that allows you to create and clone git repositories. I have my [`website-generator`](https://github.com/pdil/website-generator) repository in Working Copy which lets me edit any file in that repo and commit the changes. As soon as the changes are committed, the Travis CI workflow detailed above is kicked off.
 
 ### Coda
-[Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8){:target="_blank"} is a wonderful code editing app by [Panic](https://panic.com){:target="_blank"}. I use it to edit the files that I keep in Working Copy because of its great features. I especially love the webpage preview tool which lets you see how your content looks before you push. 
+[Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&at=1001lxud){:target="_blank"} is a wonderful code editing app by [Panic](https://panic.com){:target="_blank"}. I use it to edit the files that I keep in Working Copy because of its great features. I especially love the webpage preview tool which lets you see how your content looks before you push. 
 
 ### Side-by-side
 
@@ -56,7 +56,7 @@ Both Coda and Working Copy are compatible with Webdav servers so anything you ed
 
 Here is an image of these two apps working side-by-side:
 
-![Working Copy / Coda workflow]({{site.url}}/images/working-copy-coda-workflow.png)
+[![Working Copy / Coda workflow]({{site.url}}/images/working-copy-coda-workflow.png)]({{site.url}}/images/working-copy-coda-workflow.png)
 
 The iPad is great for this because of its SplitView multitasking feature. I'm excited for iOS 11's file management and drag-and-drop improvements to help even further. 
 
@@ -78,6 +78,6 @@ The following links contain services and products that were mentioned earlier in
 * [_site repo](https://github.com/pdil/_site) (contains the generated files that actually present the site)
 * [Travis CI](https://travis-ci.org) (continuous integration platform)
 * [Pushover](https://pushover.net) (automated push notification service)
-* [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8) (iOS git client)
-* [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8) (iOS web development IDE)
+* [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8&at=1001lxud) (iOS git client)
+* [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&at=1001lxud) (iOS web development IDE)
 * [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english?fnode=56) (wireless Bluetooth keyboard)
