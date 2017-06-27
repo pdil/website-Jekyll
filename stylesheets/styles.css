@@ -204,7 +204,6 @@ more {
 }
 
 @media print, screen and (max-width: 960px) {
-
   div.wrapper {
     width:auto;
     margin:0;
@@ -247,6 +246,10 @@ more {
   
   #name-header img {
     height: 100px;
+  }
+  
+  #name-header: h1 {
+    float: right;
   }
 }
 
