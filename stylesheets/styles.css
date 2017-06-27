@@ -171,17 +171,17 @@ more {
   background: #fff;
 }
 
-#back-button {
-  font-size: 125%;
-  vertical-align: center;
-}
-
 #name-header h1 {
   text-align: center;
 }
 
 #social-icons a {
   padding: 8px;
+}
+
+#back-button {
+  font-size: 125%;
+  vertical-align: center;
 }
 
 #page-title {
@@ -246,6 +246,7 @@ more {
   
   #name-header img {
     height: 100px;
+    float: left;
   }
   
   #name-header: h1 {
