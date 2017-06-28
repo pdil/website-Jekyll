@@ -16,15 +16,17 @@ The steps for this process are as follows:
 
 1. Commits to this repository automatically start [Travis CI](https://travis-ci.org/pdil/website-generator) build process.
 2. Travis executes `scripts/build.sh`
+   * Clones the [pdil/_site](https://github.com/pdil/_site) repository
    * Calls `jekyll build` to generate the website files
    * Calls `html-proofer` to check for HTML errors
-3. `jekyll build` creates a `_site` folder with the generated website files.
+3. `jekyll build` builds to the `_site` folder with the generated website files (overwriting the cloned repo).
 4. Travis executes `scripts/deploy.sh`
    * `cd`'s into `_site`
-   * Creates a git repo (`git init`)
-   * Adds all files and commits
+   * Stages all files and commits
    * Pushes to [pdil/_site](https://github.com/pdil/_site)
    * The commit ID of this repo is included in the commit message to [pdil/_site](https://github.com/pdil/_site) so that it's easy to check if the current website-generator commit has been successfully built.
 5. When the entire process is complete (or errors out) I am sent a [Pushover](https://pushover.net/) notification indicating the status of the build.
 
 This process makes it very convenient to edit or post to my website while on the go. For example, using the [Working Copy](https://workingcopyapp.com/) iOS app I can edit files and push them to this repository and the website is automatically built and hosted, even though I don't have access to a terminal. It also allows me to receive push notifications on the status of the build.
+
+The process is described in more detail in my blog post [Automated publishing with Jekyll and Travis CI on iOS](https://dilorenzo.pl/meta/2017/06/26/automated-publishing-ios/).
