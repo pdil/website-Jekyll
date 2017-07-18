@@ -26,8 +26,11 @@
     <div class="wrapper">
       <header>
         <div id="name-header">
-          <!-- <a href="{{site.url}}"><img src="{{site.url}}/images/profile_pic_circle.png" alt=""></a><br> -->
-          <a href="{{site.url}}"><img src="https://www.gravatar.com/avatar/77883fdc27ae005596275f24218b8dfe?s=125&d={{ site.url | url_encode }}%2Fimages%2Fprofile_pic_circle.png"></a><br>
+          <!--
+            R code to generate md5 hash in Gravatar URL:
+            digest::digest("dilorenzopl@gmail.com", algo = "md5", serialize = FALSE)
+          -->
+          <a href="{{site.url}}"><img src="https://www.gravatar.com/avatar/40abe04b1fd805f4fe2169ef2b1fb790?s=125&d={{ site.url | url_encode }}%2Fimages%2Fprofile_pic_circle.png"></a><br>
           <h1>Paolo Di Lorenzo</h1>
         </div>
           
