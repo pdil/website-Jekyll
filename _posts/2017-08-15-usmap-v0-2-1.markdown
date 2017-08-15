@@ -1,0 +1,11 @@
+---
+layout: post
+title: usmap v0.2.1 released
+category: data
+author: Paolo Di Lorenzo
+date: 2017-08-15 11:00 -0500
+---
+
+`usmap v0.2.1` is now available for download on [CRAN](https://cran.r-project.org/package=usmap). This minor update includes bug fixes and documentation improvements. 
+
+You can read the full changelog [here](https://github.com/pdil/usmap/releases/tag/v0.2.1). 
