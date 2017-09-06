@@ -24,7 +24,7 @@ header: Blog / Archive
         <!-- ignore Micro.blog posts -->
       {% else if %}
         <tr>
-            <td>{{ post.date | date_to_string }}</td> 
+            <td class="no-wrap">{{ post.date | date_to_string }}</td> 
             <td><a href="{{post.url}}">{{ post.title }}</a></td>
             <td><a href="{{site.url}}{{site.category_dir}}{{post.category}}">{{ post.category }}</a></td>
         </tr>
