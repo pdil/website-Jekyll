@@ -1,0 +1,10 @@
+—
+layout: post
+title: Micro.blog Post #3
+category: micro
+author: Paolo Di Lorenzo
+date: 2017-09-12 17:28 -0500
+hidden: true
+—
+
+Great fall event from Apple as usual, though disappointed to have to wait a couple months for iPhone X 😵
