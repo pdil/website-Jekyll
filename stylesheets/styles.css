@@ -216,6 +216,10 @@ more {
     white-space: nowrap;
 }
 
+.no-bullet-list {
+  list-style-type: none;
+}
+
 @media print, screen and (max-width: 960px) {
   div.wrapper {
     width:auto;
