@@ -141,6 +141,11 @@ section {
   padding-bottom:50px;
 }
 
+.no-nav section {
+  width:60%;
+  padding-bottom:50px;
+}
+
 small {
   font-size:11px;
 }
