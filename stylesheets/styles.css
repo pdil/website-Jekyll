@@ -142,10 +142,10 @@ section {
 }
 
 .no-nav section {
-  width:60%;
   float:none;
   margin:auto;
   padding-bottom:50px;
+  width:auto;
 }
 
 small {
@@ -167,7 +167,7 @@ footer {
 }
 
 more {
-  float: right
+  float: right;
 }
 
 #name-header img {
