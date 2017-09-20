@@ -143,6 +143,7 @@ section {
 
 .no-nav section {
   width:60%;
+  float:none;
   padding-bottom:50px;
 }
 
