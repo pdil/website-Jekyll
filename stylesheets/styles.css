@@ -136,16 +136,16 @@ strong {
 }
 
 section {
-  width:60%;/*500px;*/
   float:right;
   padding-bottom:50px;
+  width:60%;
 }
 
-.no-nav section {
+section.no-nav {
   float:none;
   margin:auto;
   padding-bottom:50px;
-  width:auto;
+  width:85%;
 }
 
 small {
@@ -255,6 +255,10 @@ more {
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
+  }
+  
+  section.no-nav {
+    width:auto;
   }
   
   #name-header img {
