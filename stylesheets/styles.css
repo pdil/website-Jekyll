@@ -170,6 +170,10 @@ more {
   float: right;
 }
 
+.app-icon img {
+  border-radius: 15px;
+}
+
 #name-header img {
   background: #fff;
   border-collapse: separate;
