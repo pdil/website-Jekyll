@@ -170,7 +170,11 @@ more {
   float: right;
 }
 
-.app-icon img {
+h1.app-header {
+  margin-left: 64px;
+}
+
+img.app-header {
   border-radius: 15px;
 }
 
