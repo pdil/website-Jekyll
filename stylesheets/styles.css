@@ -170,14 +170,6 @@ more {
   float: right;
 }
 
-h1.app-header {
-  margin-left: 64px;
-}
-
-img.app-header {
-  border-radius: 15px;
-}
-
 #name-header img {
   background: #fff;
   border-collapse: separate;
