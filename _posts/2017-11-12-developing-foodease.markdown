@@ -3,15 +3,15 @@ layout: post
 title: Developing FoodEase
 category: ios
 author: Paolo Di Lorenzo
-date: 2017-11-12 19:00 -0500
+date: 2017-11-12 18:30 -0500
 ---
 
-Just over six weeks ago, I released my first iPhone app, [FoodEase](https://foodease.xyz) to the App Store. I haven’t written any formal blog posts since then so I thought it might be a good idea to lay out my thoughts and vision for FoodEase, as well as what led to its creation.
+Just over five weeks ago, I released my first iPhone app, [FoodEase](https://foodease.xyz) to the App Store. I haven’t written any formal blog posts since then so I thought it might be a good idea to lay out my thoughts and vision for FoodEase, as well as what led to its creation.
 
 ## Born in Charleston, SC
 Right after Christmas 2016, my girlfriend and I took a road trip down to South Carolina to get away from the harsh northern weather and experience a new place. Charleston was a beautiful little city with countless things to do and places to see. One thing that struck me was the abundance of highly rated eateries in such a concentrated downtown area. Answering the timeless travel question “where should we eat next?” became a constant bottleneck in deciding how we spent our day. Much time was wasted perusing the available dining options in Google Maps or Yelp before we decided on a place to eat. 
 
-<table>
+<table class=“centered”>
   <tr>
     <td><a href="{{site.url}}/images/google_maps_example.png"><img src="{{site.url}}/images/google_maps_example.png" width="200" alt="Google Maps Example"></a></td>
     <td><a href="{{site.url}}/images/yelp_example.png"><img src="{{site.url}}/images/yelp_example.png" width="200" alt="Yelp Example"></a></td>
@@ -51,7 +51,7 @@ This is the basic idea behind how the recommendation engine works. I will not di
 ## Smooth, reachable design
 The “brain” behind the recommendations would be useless without a visually appealing user interface to display results. The focus for developing the interface of FoodEase relied on creating a relatively fresh design that can easily be used with one hand, regardless of screen size. All main actions within FoodEase can be performed by constraining any touches to the bottom half of the screen. This is especially helpful in the context that this app would mainly be used: while navigating a busy street to reach a destination.
 
-<table>
+<table class=“centered”>
   <tr>
     <td><a href="{{site.url}}/images/foodease_main.png"><img src="{{site.url}}/images/foodease_main.png" width="200" alt="Main Screen"></a></td>
     <td><a href="{{site.url}}/images/foodease_map.png"><img src="{{site.url}}/images/foodease_map.png" width="200" alt="Map Screen"></a></td>
