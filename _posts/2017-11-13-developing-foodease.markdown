@@ -11,8 +11,12 @@ Just over six weeks ago, I released my first iPhone app, [FoodEase](https://food
 ## Born in Charleston, SC
 Right after Christmas 2016, my girlfriend and I took a road trip down to South Carolina to get away from the harsh northern weather and experience a new place. Charleston was a beautiful little city with countless things to do and places to see. One thing that struck me was the abundance of highly rated eateries in such a concentrated downtown area. Answering the timeless travel question “where should we eat next?” became a constant bottleneck in deciding how we spent our day. Much time was wasted perusing the available dining options in Google Maps or Yelp before we decided on a place to eat. 
 
-[![Google Maps]({{site.url}}/images/google_maps_example.png)]({{site.url}}/images/google_maps_example.png)
-[![Yelp]({{site.url}}/images/yelp_example.png)]({{site.url}}/images/yelp_example.png)
+<table>
+  <tr>
+    <td><a href="{{site.url}}/images/google_maps_example.png"><img src="{{site.url}}/images/google_maps_example.png" width="200" alt="Google Maps Example"></a></td>
+    <td><a href="{{site.url}}/images/yelp_example.png"><img src="{{site.url}}/images/yelp_example.png" width="200" alt="Yelp Example"></a></td>
+  </tr>
+</table>
 
 One of the great difficulties in deciding where to eat was due to having *too many* options. Should we have burgers, tacos, Italian, or Chinese food? Something fancy or something more casual? Should we walk there or pick something further and use ride sharing?
 
