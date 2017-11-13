@@ -225,6 +225,10 @@ more {
   margin-right: auto;
 }
 
+.centered td {
+  text-align: center;
+}
+
 @media print, screen and (max-width: 960px) {
   div.wrapper {
     width:auto;
