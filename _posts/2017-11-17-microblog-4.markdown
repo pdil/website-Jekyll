@@ -1,0 +1,10 @@
+---
+layout: post
+title: Micro.blog Post #4
+category: micro
+author: Paolo Di Lorenzo
+date: 2017-11-17 02:22 -0500
+hidden: true
+---
+
+Just finished setting up a Workflow to publish Micro.blog posts quickly. 📝 
