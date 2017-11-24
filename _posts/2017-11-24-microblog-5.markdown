@@ -1,0 +1,14 @@
+---
+layout: post
+title: Micro.blog Post #5
+category: micro
+author: Paolo Di Lorenzo
+date: 2017-11-24 14:02:01 -0500
+hidden: true
+---
+
+Testing image posting from my Micro.blog workflow...
+
+Here’s an image of a Disney cruise on the Hudson River:
+
+{{site.url}}/images/microblog/hudson-cruise.jpg
