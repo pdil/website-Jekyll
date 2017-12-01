@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Micro.blog Post #3
+title: Micro.blog Post &#35;3
 category: micro
 author: Paolo Di Lorenzo
 date: 2017-09-12 17:28 -0500
