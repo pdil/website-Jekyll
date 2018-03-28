@@ -8,3 +8,5 @@ hidden: true
 ---
 
 Here’s a photo from the March for Our Lives in NYC last Saturday.
+
+<img src="{{site.url}}/images/microblog/img_microblog_7.jpg">
