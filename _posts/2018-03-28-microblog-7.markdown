@@ -1,0 +1,10 @@
+---
+layout: post
+title: Micro.blog Post #7
+category: micro
+author: Paolo Di Lorenzo
+date: 2018-03-28 11:57:27 -0500
+hidden: true
+---
+
+Here’s a photo from the March for Our Lives in NYC last Saturday.
