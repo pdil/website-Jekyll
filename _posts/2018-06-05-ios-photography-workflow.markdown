@@ -56,7 +56,7 @@ I will occasionally post some more experimental photos to [VSCO](https://itunes.
 
 
 ## Extras
-<img src="{{site.url}}/images/ios-photo-workflow-clips.png"> <img src="{{site.url}}/images/ios-photo-workflow-slow-shutter.png"> <img src="{{site.url}}/images/ios-photo-workflow-hyperlapse.png"> <img src="{{site.url}}/images/ios-photo-workflow-imovie.png"> <img src="{{site.url}}/images/ios-photo-workflow-swipeable.png">
+<img src="{{site.url}}/images/ios-photo-workflow-clips.png"> <img src="{{site.url}}/images/ios-photo-workflow-slow-shutter.png"> <img src="{{site.url}}/images/ios-photo-workflow-imovie.png"> <img src="{{site.url}}/images/ios-photo-workflow-hyperlapse.png"> <img src="{{site.url}}/images/ios-photo-workflow-swipeable.png">
 This list contains some apps that I don’t regularly use but do have some nice features for the special instances in which they are useful. 
 ### Clips
 [Clips](https://itunes.apple.com/us/app/clips/id1212699939?mt=8&uo=4&at=1001lxud) was an interesting surprise when first released with iOS 10.3. It allows you to cleverly stitch together video clips and photos and overlay them with tons of effects, filters, and text. I haven’t made any full videos with it yet but it is fun to take out when on a hike or trip and just capture snippets of moments for reminiscing later on. 
