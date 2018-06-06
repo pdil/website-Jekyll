@@ -10,7 +10,7 @@ Photography is one of my hobbies, complementing my other hobbies of traveling an
 
 In this article I’m going to list the apps that I use in my photography pipeline, all the way from capturing to publishing. I am by no means an expert photographer (nor have I tested all of the apps in each category) but this is the setup I use if you’re looking for some inspiration.
 
-I welcome any suggestions or feedback on [Twitter]({{site.author_twitter}}).
+I welcome any suggestions or feedback on [Twitter](https://twitter.com/{{site.author_twitter}}).
 
 The main steps in my iOS photography are as follows:
 1. Capture
@@ -22,7 +22,7 @@ The main steps in my iOS photography are as follows:
 ## Capture
 <img src="{{site.url}}/images/ios-photo-workflow-halide.png">
 ### Halide
-[Halide](https://itunes.apple.com/us/app/halide-camera/id885697368?mt=8&uo=4&at=1001lxud) is a relatively new camera app by with a beautiful design and excellent pro features. It allows the user to set the exposure, focus, ISO, and white balance. Recently it added some features that take advantage of depth photography on phones with dual cameras. Most importantly, Halide allows RAW photo capture, which provides the ability to finely edit every aspect of the photo later on. I use Halide for most pictures I take, and have added its widget to the Today screen so I can quickly access it from the lock screen. My biggest issue with Halide is that the photo preview is a bit laggy when planning around, unlike the stock Camera app which is perfectly smooth. This may be a third party app limitation with the camera frameworks on iOS. However this is mostly a non-issue given the functionality and design present in Halide.
+[Halide](https://itunes.apple.com/us/app/halide-camera/id885697368?mt=8&uo=4&at=1001lxud) is a relatively new camera app with a beautiful design and excellent pro features. It allows the user to set the exposure, focus, ISO, and white balance. Recently it added some features that take advantage of depth photography on phones with dual cameras. Most importantly, Halide allows RAW photo capture, which provides the ability to finely edit every aspect of the photo later on. I use Halide for most pictures I take, and have added its widget to the Today screen so I can quickly access it from the lock screen. My biggest issue with Halide is that the photo preview is a bit laggy when planning around, unlike the stock Camera app which is perfectly smooth. This may be a third party app limitation with the camera frameworks on iOS. However this is mostly a non-issue given the functionality and design present in Halide.
 ### Camera
 Despite the feature set and design of Halide, it’s difficult to ignore the stock Camera app built into iOS. Since it is built into the lock screen (swipe left) its always going to be the fastest way to take a picture. I use the stock Camera app for all video capture and Live Photos. Occasionally I will use it for photos if I want to take a picture quickly. The biggest downside is that it currently can not capture photos in a RAW format. For this reason I continue to use Halide for most photo capture from my phone. 
 
