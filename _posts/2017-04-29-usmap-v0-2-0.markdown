@@ -10,7 +10,7 @@ I finally got around to updating usmap to version 0.2.0. This version adds the c
 <br>
 Here is an example of such a plot: <br>
 
-<center><img src="{{ site.url }}/images/state-pop-example-w-key.png" /></center>
+<center><img src="{{ site.url }}/images/state-pop-example-w-key.png" alt="State population choropleth"></center>
 
 This map shows the population of each state as of 2015. The code to create this is as follows:
 

@@ -12,7 +12,7 @@ Normally, plotting US maps in R is awkward because Alaska and Hawaii are far fro
 
 Here's an example: <br>
 
-<center><img src="{{ site.url }}/images/ugly-usmap.png" /></center>
+<center><img src="{{ site.url }}/images/ugly-usmap.png" alt="Default US map"></center>
 
 Absolutely disgusting.
 
@@ -23,7 +23,7 @@ Let's try using `usmap`:
     plot_usmap()
 {% endhighlight %}
 
-<center><img src="{{ site.url }}/images/nice-usmap.png" /></center>
+<center><img src="{{ site.url }}/images/nice-usmap.png" alt="Better US map"></center>
 
 Ah, much better. The map is even drawn using a nicer <a href="https://en.wikipedia.org/wiki/Albers_projection" target="_blank">equal-area projection</a>, rather than the default <a href="https://en.wikipedia.org/wiki/Mercator_projection" target="_blank">Mercator</a> that always seems to be used. You can also plot all the counties of the US with this package and select only certain states/counties to be drawn as well. You can see the county map at the landing page I created for this package by <a href="{{ site.url }}/pkgs/usmap">clicking here</a>.
 
