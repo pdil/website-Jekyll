@@ -20,7 +20,7 @@ The main steps in my iOS photography are as follows:
 
 
 ## Capture
-<img src="{{site.url}}/images/ios-photo-workflow-halide.png">
+<img src="{{site.url}}/images/ios-photo-workflow-halide.png" alt="Halide">
 ### Halide
 [Halide](https://itunes.apple.com/us/app/halide-camera/id885697368?mt=8&uo=4&at=1001lxud) is a relatively new camera app with a beautiful design and excellent pro features. It allows the user to set the exposure, focus, ISO, and white balance. Recently it added some features that take advantage of depth photography on phones with dual cameras. Most importantly, Halide allows RAW photo capture, which provides the ability to finely edit every aspect of the photo later on. I use Halide for most pictures I take, and have added its widget to the Today screen so I can quickly access it from the lock screen. My biggest issue with Halide is that the photo preview is a bit laggy when planning around, unlike the stock Camera app which is perfectly smooth. This may be a third party app limitation with the camera frameworks on iOS. However this is mostly a non-issue given the functionality and design present in Halide.
 ### Camera
@@ -28,7 +28,7 @@ Despite the feature set and design of Halide, it’s difficult to ignore the sto
 
 
 ## Manage
-<img src="{{site.url}}/images/ios-photo-workflow-bestphotos.png"> <img src="{{site.url}}/images/ios-photo-workflow-metapho.png">
+<img src="{{site.url}}/images/ios-photo-workflow-bestphotos.png" alt="Best Photos"> <img src="{{site.url}}/images/ios-photo-workflow-metapho.png" alt="Metapho">
 ### Best Photos
 [Best Photos](https://itunes.apple.com/us/app/bestphotos/id1168605247?mt=8&uo=4&at=1001lxud) is a great utility that allows you to quickly filter through all of the photos in your library and delete unneeded ones. It also allows quick favoriting of each as you move through he library. 
 ### Photos
@@ -38,7 +38,7 @@ The stock Photos app on iOS is the central hub of my photo management workflow. 
 
 
 ## Edit
-<img src="{{site.url}}/images/ios-photo-workflow-darkroom.png"> <img src="{{site.url}}/images/ios-photo-workflow-focos.png"> <img src="{{site.url}}/images/ios-photo-workflow-vsco.png">
+<img src="{{site.url}}/images/ios-photo-workflow-darkroom.png" alt="Darkroom"> <img src="{{site.url}}/images/ios-photo-workflow-focos.png" alt="Focos"> <img src="{{site.url}}/images/ios-photo-workflow-vsco.png" alt="VSCO">
 ### Darkroom
 [Darkroom](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746?mt=8&uo=4&at=1001lxud) is my most used photo editing app on iOS. It provides lots of attributes that can be edited in RAW photos, including RGB curves and edits by color. It is closely integrated with Halide and contains a button to open Halide if it’s installed (Halide also has a button to open Darkroom). It also offers a lot of great filters and the ability to save more to edit future photos in a similar style. 
 ### Focos
@@ -48,7 +48,7 @@ I will occasionally open a photo in [VSCO](https://itunes.apple.com/us/app/vsco/
 
 
 ## Publish
-<img src="{{site.url}}/images/ios-photo-workflow-instagram.png"> <img src="{{site.url}}/images/ios-photo-workflow-vsco.png">
+<img src="{{site.url}}/images/ios-photo-workflow-instagram.png" alt="Instagram"> <img src="{{site.url}}/images/ios-photo-workflow-vsco.png" alt="VSCO">
 ### Instagram
 I usually post a selection of my final edited photos to [Instagram](https://itunes.apple.com/us/app/instagram/id389801252?mt=8&uo=4&at=1001lxud). I try to post around one photo per month currently but I’m hoping to increase the frequency, especially now that I’ve tabulated my entire workflow. I share photos to Instagram directly from the Photos app using the share sheet. I have disabled camera, microphone, and photos access for Instagram for privacy reasons but sharing directly from Photos still works. I then edit the photo to add a location within Instagram. My Instagram page is [@_dilorenzopl](https://instagr.am/_dilorenzopl).
 ### VSCO
@@ -56,7 +56,7 @@ I will occasionally post some more experimental photos to [VSCO](https://itunes.
 
 
 ## Extras
-<img src="{{site.url}}/images/ios-photo-workflow-clips.png"> <img src="{{site.url}}/images/ios-photo-workflow-slow-shutter.png"> <img src="{{site.url}}/images/ios-photo-workflow-imovie.png"> <img src="{{site.url}}/images/ios-photo-workflow-hyperlapse.png"> <img src="{{site.url}}/images/ios-photo-workflow-swipeable.png">
+<img src="{{site.url}}/images/ios-photo-workflow-clips.png" alt="Clips"> <img src="{{site.url}}/images/ios-photo-workflow-slow-shutter.png" alt="Slow Shutter"> <img src="{{site.url}}/images/ios-photo-workflow-imovie.png" alt="iMovie"> <img src="{{site.url}}/images/ios-photo-workflow-hyperlapse.png" alt="Hyperlapse"> <img src="{{site.url}}/images/ios-photo-workflow-swipeable.png" alt="Swipeable">
 This list contains some apps that I don’t regularly use but do have some nice features for the special instances in which they are useful. 
 ### Clips
 [Clips](https://itunes.apple.com/us/app/clips/id1212699939?mt=8&uo=4&at=1001lxud) was an interesting surprise when first released with iOS 10.3. It allows you to cleverly stitch together video clips and photos and overlay them with tons of effects, filters, and text. I haven’t made any full videos with it yet but it is fun to take out when on a hike or trip and just capture snippets of moments for reminiscing later on. 
