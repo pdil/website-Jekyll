@@ -18,18 +18,48 @@ header: Blog / Archive
   </thead>
     
   <tbody>
-  
     {% for post in site.posts %}
       {% if post.category == "micro" %}
-        <!-- ignore Micro.blog posts -->
+       {% comment %} ignore Micro.blog posts {% endcomment %}
       {% else if %}
         <tr>
-            <td class="no-wrap">{{ post.date | date_to_string }}</td> 
-            <td><a href="{{post.url}}">{{ post.title }}</a></td>
-            <td><a href="{{site.url}}{{site.category_dir}}{{post.category}}">{{ post.category }}</a></td>
+          <td class="no-wrap">{{ post.date | date_to_string }}</td> 
+          <td><a href="{{post.url}}">{{ post.title }}</a></td>
+          <td><a href="{{site.url}}{{site.category_dir}}{{post.category}}">{{ post.category }}</a></td>
         </tr>
       {% endif %}
+    {% endfor %}     
+  </tbody>
+</table>
+
+<br><br>
+
+<h3>Micro.blog Posts</h3>
+
+See them all on <a href="{{site.author_microblog}}">Micro.blog</a>.
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Category</th>
+    </tr>  
+  </thead>
+    
+  <tbody>
+    {% for post in site.posts %}
+      {% if post.category == "micro" %}
+        <tr>
+          <td class="no-wrap">{{ post.date | date_to_string }}</td> 
+          <td><a href="{{post.url}}">{{ post.title }}</a></td>
+          <td><a href="{{site.url}}{{site.category_dir}}{{post.category}}">{{ post.category }}</a></td>
+        </tr>
+      {% else if }
+        {% comment %} ignore non Micro.blog posts {% endcomment %}
+      {% endif %}
     {% endfor %}
-      
   </tbody>
 </table>
