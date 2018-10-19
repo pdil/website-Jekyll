@@ -34,18 +34,17 @@ header: Blog / Archive
 
 <br><br>
 
-<h3>Micro.blog Posts</h3>
+<h2>Micro.blog Posts</h2>
 
 See them all on <a href="{{site.author_microblog}}">Micro.blog</a>.
 
-<br>
+<br><br>
 
 <table>
   <thead>
     <tr>
       <th>Date</th>
       <th>Title</th>
-      <th>Category</th>
     </tr>  
   </thead>
     
@@ -55,7 +54,6 @@ See them all on <a href="{{site.author_microblog}}">Micro.blog</a>.
         <tr>
           <td class="no-wrap">{{ post.date | date_to_string }}</td> 
           <td><a href="{{post.url}}">{{ post.title }}</a></td>
-          <td><a href="{{site.url}}{{site.category_dir}}{{post.category}}">{{ post.category }}</a></td>
         </tr>
       {% endif %}
     {% endfor %}
