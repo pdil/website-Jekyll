@@ -22,9 +22,6 @@ baseurl: /blog/
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: https://dilorenzo.pl
 
-# Google analytics tracking
-google_analytics_id: UA-66634023-1
-
 #### Jekyll Options #####
 
 # Markdown engine, `kramdown` is the default processor in Jekyll 3.0.0 and the only one supported by Github Pages.
