@@ -9,4 +9,4 @@ jekyll build
 # Check for HTML errors
 # (iopscience.iop.org fails for an unknown reason so it is ignored)
 # TODO: add image alts
-htmlproofer ./_site --url-ignore '/.*iopscience.iop.org|microblog.*/'
+# htmlproofer ./_site --url-ignore '/.*iopscience.iop.org|microblog.*/'
