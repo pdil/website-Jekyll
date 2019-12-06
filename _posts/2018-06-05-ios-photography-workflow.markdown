@@ -71,7 +71,7 @@ I’ve had [Slow Shutter](https://itunes.apple.com/us/app/slow-shutter-cam/id357
 ## Some Final Tips
 * When traveling and taking photos, feel free to use Airplane Mode to save battery. Since iOS 8.3, the GPS still works on iPhone if Airplane Mode is on. I recently discovered this and it has helped greatly. [^2]
 * Nowadays you don’t need expensive equipment to take great photos if you already have any iPhone made in the last 5 years. Most of the actions described in this article can be done with the built in Camera and Photos app so if you have any interest, there’s nothing stopping you from getting out there and creating great photos.
-* If you do have a DSLR or other external camera, get a [Lightning-to-SD Card adapter](https://www.amazon.com/dp/B0744JB6KR) so you can import your photos right into the Photos app (and continue with the rest of the workflow directly).
+* If you do have a DSLR or other external camera, get a Lightning-to-SD Card adapter so you can import your photos right into the Photos app (and continue with the rest of the workflow directly).
 
 ---
 [^1]: Darkroom just added depth editing in their [latest update](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746?mt=8) so I am eager to see how it works and compares to Focos.
