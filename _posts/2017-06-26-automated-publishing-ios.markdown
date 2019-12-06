@@ -66,8 +66,6 @@ I use an [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/mag
 
 The combination of web services and iOS apps really come together to provide a streamlined workflow for publishing blogs using Jekyll. In fact, the blog post you're reading right now was written from my iPad Air 2! This process could be extended to push the generated website files to any hosting platform that one is using to host their site (such as Amazon S3, Linode, etc.). 
 
-If you have any other ideas for improving this workflow or what techniques you use for your own content, tell me on [Twitter](https://twitter.com/dilorenzopl). I'm always looking for ways to improve and am curious about other people's methods.
-
 <hr>
 
 ## Links

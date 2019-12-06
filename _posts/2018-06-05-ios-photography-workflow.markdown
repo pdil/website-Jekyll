@@ -10,8 +10,6 @@ Photography is one of my hobbies, complementing my other hobbies of traveling an
 
 In this article I’m going to list the apps that I use in my photography pipeline, all the way from capturing to publishing. I am by no means an expert photographer (nor have I tested all of the apps in each category) but this is the setup I use if you’re looking for some inspiration.
 
-I welcome any suggestions or feedback on [Twitter](https://twitter.com/{{site.author_twitter}}).
-
 The main steps in my iOS photography are as follows:
 1. Capture
 2. Manage
@@ -63,7 +61,7 @@ This list contains some apps that I don’t regularly use but do have some nice 
 ### Slow Shutter
 I’ve had [Slow Shutter](https://itunes.apple.com/us/app/slow-shutter-cam/id357404131?mt=8&uo=4&at=1001lxud) on my phone for quite some time, at least 4-5 years. It allows you to record long exposure shots with the phone. It essentially captures a short video and then overlays the differences between the frames to create a nice blurred effect (assuming the phone wasn’t moved during capture). This app is best used with a tripod or spot you can lean the phone against. Since iOS 11 was released however, I’ve been mostly using the long exposure Live Photo effect in the Photos app.
 ### iMovie
-[iMovie](https://itunes.apple.com/us/app/imovie/id377298193?mt=8&uo=4&at=1001lxud) is my video editor of choice, since it’s free and simple. I don’t usually record and edit video but when I need to string a few clips together and add some effects it gets the job done. It was [finally](https://twitter.com/dilorenzopl/status/984543207634718722) updated to support the full iPhone X screen size.
+[iMovie](https://itunes.apple.com/us/app/imovie/id377298193?mt=8&uo=4&at=1001lxud) is my video editor of choice, since it’s free and simple. I don’t usually record and edit video but when I need to string a few clips together and add some effects it gets the job done. It was finally updated to support the full iPhone X screen size.
 ### Hyperlapse
 [Hyperlapse](https://itunes.apple.com/us/app/hyperlapse-from-instagram/id740146917?mt=8&uo=4&at=1001lxud) is a simple app by Instagram that allows the user to take time-lapses. The UI is dead simple and the only options are front or back camera and the speed of the time-lapse once its recorded. I find that it makes smoother videos than the built-in Camera app’s time-lapse functionality. I [recorded a landscape during the August 2017 total solar eclipse](https://instagram.com/p/BYE7GxHgBTa/) using Hyperlapse. 
 ### Swipeable
