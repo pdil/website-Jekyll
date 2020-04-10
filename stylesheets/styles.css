@@ -172,24 +172,6 @@ more {
   float: right;
 }
 
-#name-header img {
-  background: #fff;
-  border-collapse: separate;
-  border-radius: 62.5px;
-  display: block;
-  height: 125px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#name-header h1 {
-  text-align: center;
-}
-
-#social-icons a {
-  padding: 8px;
-}
-
 #back-button {
   font-size: 125%;
   vertical-align: center;
@@ -275,16 +257,6 @@ more {
   section.no-nav {
     width:auto;
   }
-  
-  #name-header img {
-    border-radius: 50px;
-    float: left;
-    height: 100px;
-  }
-  
-  #name-header: h1 {
-    float: right;
-  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -299,21 +271,11 @@ more {
   pre, code {
     word-wrap:normal;
   }
-  
-  #name-header img {
-    border-radius: 37.5px;
-    height: 75px;
-  }
 }
 
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
-  }
-  
-  #name-header img {
-    border-radius: 25px;
-    height: 50px;
   }
 }
 
