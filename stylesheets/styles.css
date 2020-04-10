@@ -172,6 +172,10 @@ more {
   float: right;
 }
 
+#name-header h1 {
+  text-align: center;
+}
+
 #back-button {
   font-size: 125%;
   vertical-align: center;
@@ -256,6 +260,10 @@ more {
   
   section.no-nav {
     width:auto;
+  }
+  
+  #name-header: h1 {
+    float: right;
   }
 }
 
